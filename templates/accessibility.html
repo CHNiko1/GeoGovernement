@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Accessibility - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li>Accessibility</li>
+{% endblock %}
+
+{% block content %}
+<section class="section accessibility-section">
+    <div class="container">
+        <h1>Accessibility Statement</h1>
+        <p class="lead">The Georgian Government is committed to ensuring digital accessibility for all citizens, including those with disabilities.</p>
+
+        <div class="accessibility-content">
+            <h2>Our Commitment</h2>
+            <p>We are dedicated to providing a website that is accessible to the widest possible audience, regardless of ability or circumstance. This website aims to comply with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.</p>
+
+            <h2>Accessibility Features</h2>
+            <ul class="accessibility-features">
+                <li><strong>Keyboard Navigation:</strong> All functionality is accessible via keyboard alone. Press Tab to navigate and Enter to activate.</li>
+                <li><strong>Screen Reader Support:</strong> Our website is designed to work with screen readers including NVDA, JAWS, and VoiceOver.</li>
+                <li><strong>Color Contrast:</strong> Text has sufficient contrast ratios (minimum 4.5:1) for readability.</li>
+                <li><strong>Text Resizing:</strong> Users can resize text up to 200% without loss of functionality.</li>
+                <li><strong>Alternative Text:</strong> All images have descriptive alt text for screen readers.</li>
+                <li><strong>Form Labels:</strong> All form inputs are properly labeled and associated.</li>
+                <li><strong>Skip Navigation:</strong> Skip-to-content links allow quick access to main content.</li>
+                <li><strong>Reduced Motion:</strong> Animations respect the prefers-reduced-motion preference.</li>
+                <li><strong>Dark Mode:</strong> Optional dark theme for users with light sensitivity.</li>
+                <li><strong>Language Support:</strong> Multiple language options available.</li>
+            </ul>
+
+            <h2>Technical Standards</h2>
+            <p>This website is built using semantic HTML5 and modern web standards. We regularly test for accessibility issues and make improvements based on user feedback and automated testing tools.</p>
+
+            <h2>Known Issues</h2>
+            <p>While we strive for full accessibility, some third-party services may have limited accessibility features. We're working with vendors to improve their compliance.</p>
+
+            <h2>Keyboard Shortcuts</h2>
+            <ul class="keyboard-shortcuts">
+                <li><strong>Ctrl+K / Cmd+K:</strong> Open search overlay</li>
+                <li><strong>Tab:</strong> Navigate to next element</li>
+                <li><strong>Shift+Tab:</strong> Navigate to previous element</li>
+                <li><strong>Enter:</strong> Activate button or link</li>
+                <li><strong>Esc:</strong> Close modals and overlays</li>
+                <li><strong>Space:</strong> Activate checkbox or button</li>
+                <li><strong>Arrow Keys:</strong> Navigate lists and menus</li>
+            </ul>
+
+            <h2>Assistive Technology Support</h2>
+            <p>This website has been tested with the following assistive technologies:</p>
+            <ul>
+                <li>NVDA (free screen reader)</li>
+                <li>JAWS (premium screen reader)</li>
+                <li>VoiceOver (macOS/iOS)</li>
+                <li>Voice Control (Windows/Mac)</li>
+                <li>Magnification software</li>
+                <li>Voice-to-text applications</li>
+            </ul>
+
+            <h2>Report Accessibility Issues</h2>
+            <p>If you encounter accessibility barriers, please report them to us:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:accessibility@government.ge">accessibility@government.ge</a><br>
+                <strong>Phone:</strong> <a href="tel:+99532999999">+995 (32) 2 999 999</a><br>
+                <strong>Form:</strong> <a href="{{ url_for('contact') }}">Contact us</a>
+            </p>
+            <p>Please include specific details about the accessibility issue and the browser/assistive technology you're using. We'll respond within 2 business days.</p>
+
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener noreferrer">WCAG 2.1 Quick Reference</a></li>
+                <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">W3C Web Accessibility Initiative</a></li>
+                <li><a href="https://www.nvaccess.org/" target="_blank" rel="noopener noreferrer">NVDA Screen Reader</a></li>
+                <li><a href="https://webaim.org/" target="_blank" rel="noopener noreferrer">WebAIM Resources</a></li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>This website may use third-party services for analytics, forms, and other features. While we encourage all vendors to maintain accessibility standards, we cannot guarantee their compliance.</p>
+
+            <h2>Continuous Improvement</h2>
+            <p>Accessibility is an ongoing commitment. We regularly review and update our website to ensure it meets evolving accessibility standards and best practices. Your feedback helps us improve.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

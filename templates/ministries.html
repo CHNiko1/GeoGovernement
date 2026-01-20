@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Ministries - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li>Ministries</li>
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>Government Ministries</h1>
+        <p class="lead">Georgia's government operates through six primary ministries, each dedicated to specific policy areas and public services.</p>
+
+        <div class="ministries-grid">
+            {% for ministry in ministries %}
+            <article class="ministry-card">
+                <div class="ministry-header">
+                    <h2>
+                        <a href="{{ url_for('ministry_detail', slug=ministry.name|slugify) }}">
+                            {{ ministry.name }}
+                        </a>
+                    </h2>
+                </div>
+                <div class="ministry-content">
+                    <p class="ministry-mission"><strong>Mission:</strong> {{ ministry.mission }}</p>
+                    
+                    <div class="ministry-details">
+                        <h3>Key Responsibilities</h3>
+                        <ul>
+                            {% for resp in ministry.responsibilities[:3] %}
+                            <li>{{ resp }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="ministry-footer">
+                        <a href="{{ url_for('ministry_detail', slug=ministry.name|slugify) }}" class="btn btn-primary">Learn More</a>
+                        <a href="{{ ministry.website }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Official Site ↗</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <section class="section ministries-info">
+            <h2>Ministry Structure</h2>
+            <p>Each ministry is headed by a Minister who is part of the Council of Ministers and reports to the Deputy Prime Minister. Ministries are responsible for:</p>
+            <ul class="info-list">
+                <li>Developing policy in their area of responsibility</li>
+                <li>Implementing government programs and initiatives</li>
+                <li>Managing government agencies and services</li>
+                <li>Coordinating with international counterparts</li>
+                <li>Serving Georgian citizens and residents</li>
+            </ul>
+        </section>
+    </div>
+</section>
+{% endblock %}

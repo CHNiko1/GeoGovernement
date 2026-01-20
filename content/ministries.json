@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ministry-internal",
+    "name": "Ministry of Internal Affairs",
+    "leader_id": "minister-internal",
+    "mission": "To ensure public safety, national security, and the protection of constitutional order.",
+    "description": "The Ministry of Internal Affairs is responsible for law enforcement, emergency services, border management, and public safety across Georgia.",
+    "responsibilities": [
+      "Police and law enforcement operations",
+      "Border security and management",
+      "Emergency response and disaster management",
+      "Fire and rescue services",
+      "Counter-terrorism operations",
+      "Civil registry administration"
+    ],
+    "website": "https://www.mia.gov.ge",
+    "programs": [
+      "Modern Police Academy Development",
+      "Emergency Response System Upgrade",
+      "Community Policing Initiative",
+      "Border Security Enhancement"
+    ]
+  },
+  {
+    "id": "ministry-education",
+    "name": "Ministry of Education",
+    "leader_id": "minister-education",
+    "mission": "To provide accessible, quality education and foster lifelong learning for all Georgian citizens.",
+    "description": "The Ministry of Education oversees all levels of education, from primary to higher education, and promotes educational excellence and innovation.",
+    "responsibilities": [
+      "Curriculum development and standards",
+      "School administration and oversight",
+      "Teacher certification and training",
+      "Higher education coordination",
+      "Educational technology integration",
+      "Student welfare and support programs"
+    ],
+    "website": "https://www.mes.gov.ge",
+    "programs": [
+      "Digital School Initiative",
+      "STEM Excellence Program",
+      "Teacher Scholarship Program",
+      "Educational Infrastructure Modernization"
+    ]
+  },
+  {
+    "id": "ministry-economics",
+    "name": "Ministry of Economics",
+    "leader_id": "minister-economics",
+    "mission": "To drive sustainable economic growth, attract investment, and enhance Georgia's competitiveness.",
+    "description": "The Ministry of Economics develops economic policy, attracts foreign investment, supports entrepreneurship, and manages trade relations.",
+    "responsibilities": [
+      "Economic policy formulation",
+      "Investment promotion",
+      "SME support and development",
+      "Trade agreements and negotiations",
+      "Free trade zone management",
+      "Economic statistics and analysis"
+    ],
+    "website": "https://www.economy.ge",
+    "programs": [
+      "Start-up Georgia Initiative",
+      "Foreign Investment Attraction Program",
+      "Regional Development Fund",
+      "Trade Enhancement Program"
+    ]
+  },
+  {
+    "id": "ministry-health",
+    "name": "Ministry of Health",
+    "leader_id": "minister-healthcare",
+    "mission": "To provide accessible, equitable, and high-quality healthcare services to all Georgian citizens.",
+    "description": "The Ministry of Health oversees healthcare policy, hospital management, public health initiatives, and pandemic preparedness.",
+    "responsibilities": [
+      "Healthcare policy development",
+      "Hospital and clinic management",
+      "Infectious disease control",
+      "Vaccination programs",
+      "Medical licensing and standards",
+      "Public health emergency response"
+    ],
+    "website": "https://www.moh.gov.ge",
+    "programs": [
+      "Universal Health Coverage Expansion",
+      "Rural Healthcare Access Program",
+      "Mental Health Initiative",
+      "Digital Health Records System"
+    ]
+  },
+  {
+    "id": "ministry-environment",
+    "name": "Ministry of Environment",
+    "leader_id": "minister-environment",
+    "mission": "To protect Georgia's natural heritage and ensure sustainable environmental management.",
+    "description": "The Ministry of Environment develops environmental policy, manages natural resources, and promotes sustainability and conservation.",
+    "responsibilities": [
+      "Environmental protection and enforcement",
+      "Natural resource management",
+      "Forest conservation",
+      "Water quality and management",
+      "Wildlife protection",
+      "Climate change adaptation"
+    ],
+    "website": "https://www.moe.gov.ge",
+    "programs": [
+      "Green Georgia Initiative",
+      "Renewable Energy Transition",
+      "National Protected Areas Expansion",
+      "Sustainable Agriculture Support"
+    ]
+  },
+  {
+    "id": "ministry-foreign",
+    "name": "Ministry of Foreign Affairs",
+    "leader_id": "minister-foreign",
+    "mission": "To advance Georgia's interests on the international stage and strengthen global relationships.",
+    "description": "The Ministry of Foreign Affairs manages diplomatic relations, international negotiations, and cultural exchange programs.",
+    "responsibilities": [
+      "Diplomatic representation",
+      "International negotiations",
+      "Consular services",
+      "Cultural diplomacy",
+      "International agreement management",
+      "Development cooperation"
+    ],
+    "website": "https://www.mfa.gov.ge",
+    "programs": [
+      "EU Integration Program",
+      "NATO Partnership Program",
+      "International Scholarship Initiative",
+      "Cultural Exchange Program"
+    ]
+  }
+]

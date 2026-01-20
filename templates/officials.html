@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Officials - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li>Officials</li>
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>Government Officials</h1>
+        <p class="lead">Meet the dedicated professionals leading Georgia's government and serving its citizens.</p>
+
+        <div class="officials-grid">
+            {% for official in officials %}
+            <div class="official-card" id="{{ official.name|slugify }}">
+                <div class="official-image">
+                    {% set photo = official.photo %}
+                    {% if photo %}
+                        {% if photo.startswith('http') %}
+                            <img src="{{ photo }}" alt="{{ official.name }}" class="official-photo">
+                        {% else %}
+                            <img src="{{ url_for('static', filename=photo.lstrip('/')) }}" alt="{{ official.name }}" class="official-photo">
+                        {% endif %}
+                    {% else %}
+                        <div class="placeholder-avatar">{{ official.name[0] }}</div>
+                    {% endif %}
+                </div>
+                <div class="official-content">
+                    <h3 class="official-name">{{ official.name }}</h3>
+                    <p class="official-title">{{ official.title }}</p>
+                    <p class="official-bio">{{ official.bio }}</p>
+                    
+                    <div class="official-priorities">
+                        <h4>Key Priorities</h4>
+                        <ul>
+                            {% for priority in official.priorities[:3] %}
+                            <li>{{ priority }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="official-contact">
+                        <a href="mailto:{{ official.email }}" class="contact-link">📧 {{ official.email }}</a>
+                        <a href="tel:{{ official.phone }}" class="contact-link">📞 {{ official.phone }}</a>
+                    </div>
+
+                    <a href="{{ url_for('official_detail', slug=official.name|slugify) }}" class="btn btn-primary btn-block">View Full Profile</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

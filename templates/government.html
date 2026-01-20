@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}Government Structure - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li>Government</li>
+{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <h1>Government Structure</h1>
+        <p class="lead">The Government of Georgia is organized into key branches and agencies to serve the people effectively.</p>
+
+        <div class="gov-structure">
+            <div class="structure-branch">
+                <h2>Executive Branch</h2>
+                <div class="structure-content">
+                    <div class="position-card">
+                        <div class="position-level">Head of State</div>
+                        <h3>President</h3>
+                        <p>Chief executive of the government, representing Georgia domestically and internationally.</p>
+                        <a href="{{ url_for('officials', _anchor='giorgi-katamadze') }}" class="btn btn-sm">View President</a>
+                    </div>
+                    <div class="structure-divider">↓</div>
+                    <div class="position-card">
+                        <div class="position-level">Executive Leadership</div>
+                        <h3>Council of Ministers</h3>
+                        <p>Led by the Deputy Prime Minister, comprising heads of all major ministries.</p>
+                        <a href="{{ url_for('ministries') }}" class="btn btn-sm">View Ministries</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="structure-branch">
+                <h2>Ministries</h2>
+                <div class="structure-content">
+                    <p>Six primary ministerial departments oversee government operations:</p>
+                    <ul class="structure-list">
+                        <li>Ministry of Internal Affairs</li>
+                        <li>Ministry of Education</li>
+                        <li>Ministry of Economics</li>
+                        <li>Ministry of Health</li>
+                        <li>Ministry of Environment</li>
+                        <li>Ministry of Foreign Affairs</li>
+                    </ul>
+                    <a href="{{ url_for('ministries') }}" class="btn btn-primary">Explore Ministries</a>
+                </div>
+            </div>
+
+            <div class="structure-branch">
+                <h2>Key Governance Principles</h2>
+                <div class="structure-content principles-grid">
+                    <div class="principle-card">
+                        <h3>Democratic Accountability</h3>
+                        <p>All government officials are accountable to the people of Georgia and subject to democratic oversight.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>Transparency</h3>
+                        <p>Government decisions and actions are made public to ensure citizens can participate in governance.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>Rule of Law</h3>
+                        <p>All government actions operate within constitutional and legal frameworks that protect citizen rights.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h3>Efficiency</h3>
+                        <p>Government services are designed to be responsive, effective, and respectful of citizen time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="structure-branch">
+                <h2>Leadership Overview</h2>
+                <div class="structure-content">
+                    <p class="lead">Meet the key officials leading Georgia's government:</p>
+                    <div class="leadership-preview">
+                        <div class="leader-item">
+                            <div class="leader-avatar">🏛️</div>
+                            <div class="leader-info">
+                                <h4>Giorgi Katamadze</h4>
+                                <p>President</p>
+                                <a href="{{ url_for('officials', _anchor='giorgi-katamadze') }}">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-avatar">👤</div>
+                            <div class="leader-info">
+                                <h4>Niko Chitaishvili</h4>
+                                <p>Minister of Internal Affairs</p>
+                                <a href="{{ url_for('officials', _anchor='niko-chitaishvili') }}">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-avatar">👤</div>
+                            <div class="leader-info">
+                                <h4>Sandro Lamparadze</h4>
+                                <p>Minister of Education</p>
+                                <a href="{{ url_for('officials', _anchor='sandro-lamparadze') }}">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="leader-item">
+                            <div class="leader-avatar">👤</div>
+                            <div class="leader-info">
+                                <h4>Rezi Chichua</h4>
+                                <p>Minister of Economics</p>
+                                <a href="{{ url_for('officials', _anchor='rezi-chichua') }}">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('officials') }}" class="btn btn-primary">View All Officials</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

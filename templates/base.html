@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgian Government Official Portal - Serving Georgian Citizens">
+    <meta name="theme-color" content="#1a1a2e">
+    <meta property="og:title" content="{% block og_title %}Georgian Government{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Official portal of the Georgian Government{% endblock %}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ url_for('static', filename='img/seal.svg') }}">
+    
+    <title>{% block title %}Georgian Government Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/seal.svg') }}">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar">
+        <div class="announcement-content">
+            <span>⚠️ This is a demo project showcasing fictional government structure. For real services, visit official government portals.</span>
+            <button class="announcement-close" aria-label="Close announcement" onclick="closeAnnouncement()">✕</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="language-toggle">
+                        <span class="header-slogan">ბიძინას შევეცით</span>
+                        <img src="{{ url_for('static', filename='img/carousel1.jpg') }}" alt="Georgia" class="navbar-img">
+                        <img src="{{ url_for('static', filename='img/carousel2.jpg') }}" alt="Government" class="navbar-img">
+                    </div>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="{{ url_for('home') }}" class="logo" aria-label="Georgian Government Home">
+                        <div class="seal">🏛️</div>
+                        <div class="logo-text">
+                            <div class="logo-title">Government of Georgia</div>
+                            <div class="logo-subtitle">Official Portal</div>
+                        </div>
+                    </a>
+
+                    <nav class="nav-main" role="navigation" aria-label="Main navigation">
+                        <ul class="nav-list">
+                            <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+                            <li><a href="{{ url_for('government') }}" class="nav-link">Government</a></li>
+                            <li class="nav-item-dropdown">
+                                <a href="{{ url_for('ministries') }}" class="nav-link">Ministries</a>
+                                <ul class="nav-submenu">
+                                    {% for ministry in [
+                                        {'name': 'Ministry of Internal Affairs', 'slug': 'ministry-of-internal-affairs'},
+                                        {'name': 'Ministry of Education', 'slug': 'ministry-of-education'},
+                                        {'name': 'Ministry of Economics', 'slug': 'ministry-of-economics'},
+                                        {'name': 'Ministry of Health', 'slug': 'ministry-of-health'},
+                                        {'name': 'Ministry of Environment', 'slug': 'ministry-of-environment'},
+                                        {'name': 'Ministry of Foreign Affairs', 'slug': 'ministry-of-foreign-affairs'}
+                                    ] %}
+                                    <li><a href="{{ url_for('ministry_detail', slug=ministry['slug']) }}">{{ ministry['name'] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            <li><a href="{{ url_for('officials') }}" class="nav-link">Officials</a></li>
+                            <li><a href="{{ url_for('news') }}" class="nav-link">News</a></li>
+                            <li><a href="{{ url_for('services') }}" class="nav-link">Services</a></li>
+                            <li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <button class="search-toggle" id="searchToggle" aria-label="Open search" title="Search (Ctrl+K)">
+                            🔍
+                        </button>
+                        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search">✕</button>
+            <div class="search-input-wrapper">
+                <input 
+                    type="search" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search news and services... (Ctrl+K)" 
+                    autocomplete="off"
+                    aria-label="Search"
+                >
+                <span class="search-hint">Press ESC to close</span>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main role="main">
+        {% if request.path != '/' %}
+        <nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                {% block breadcrumb %}{% endblock %}
+            </ol>
+        </nav>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Government</h3>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('government') }}">About Government</a></li>
+                        <li><a href="{{ url_for('officials') }}">Officials</a></li>
+                        <li><a href="{{ url_for('ministries') }}">Ministries</a></li>
+                        <li><a href="{{ url_for('news') }}">Latest News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('services') }}">Citizen Services</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                        <li><a href="{{ url_for('accessibility') }}">Accessibility</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Government of Georgia. <strong>This is a fictional demo project.</strong> All content is for demonstration purposes only.</p>
+                <p class="footer-note">Built with care • Accessible • Responsive • Secure</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

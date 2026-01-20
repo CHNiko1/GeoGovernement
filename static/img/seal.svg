@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#1a1a2e" stroke-width="3"/>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#0066cc" stroke-width="1"/>
+  
+  <!-- Inner circle background -->
+  <circle cx="100" cy="100" r="85" fill="#ffffff" stroke="#1a1a2e" stroke-width="2"/>
+  
+  <!-- Shield shape -->
+  <path d="M 100 40 L 140 65 L 140 95 Q 140 130 100 155 Q 60 130 60 95 L 60 65 Z" 
+        fill="#0066cc" stroke="#1a1a2e" stroke-width="2"/>
+  
+  <!-- Shield pattern - stylized Georgian flag colors -->
+  <rect x="75" y="70" width="12" height="30" fill="#ffffff"/>
+  <rect x="90" y="70" width="12" height="30" fill="#ff0000"/>
+  <rect x="105" y="70" width="12" height="30" fill="#ffffff"/>
+  
+  <!-- Cross in shield -->
+  <line x1="100" y1="60" x2="100" y2="140" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="70" y1="100" x2="130" y2="100" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Text ring (bottom) -->
+  <path id="bottomText" d="M 35 100 A 65 65 0 0 1 165 100" fill="none"/>
+  <text font-size="12" font-weight="bold" letter-spacing="2" fill="#1a1a2e" font-family="Arial, sans-serif">
+    <textPath href="#bottomText" startOffset="50%" text-anchor="middle">
+      GOVERNMENT
+    </textPath>
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="8" fill="#0066cc"/>
+  <circle cx="100" cy="100" r="4" fill="#ffffff"/>
+</svg>

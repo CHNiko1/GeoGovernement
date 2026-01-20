@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}{{ ministry.name }} - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li><a href="{{ url_for('ministries') }}">Ministries</a></li>
+<li>{{ ministry.name }}</li>
+{% endblock %}
+
+{% block content %}
+<section class="section ministry-detail">
+    <div class="container">
+        <div class="ministry-detail-header">
+            <h1>{{ ministry.name }}</h1>
+            <p class="ministry-website">
+                <a href="{{ ministry.website }}" target="_blank" rel="noopener noreferrer">{{ ministry.website }} ↗</a>
+            </p>
+        </div>
+
+        <div class="ministry-detail-grid">
+            <div class="ministry-detail-main">
+                <div class="detail-section">
+                    <h2>Mission</h2>
+                    <p class="lead">{{ ministry.mission }}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>About</h2>
+                    <p>{{ ministry.description }}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Key Responsibilities</h2>
+                    <ul class="responsibilities-list">
+                        {% for resp in ministry.responsibilities %}
+                        <li class="responsibility-item">
+                            <span class="resp-icon">→</span>
+                            <span>{{ resp }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Key Programs & Initiatives</h2>
+                    <div class="programs-list">
+                        {% for program in ministry.programs %}
+                        <div class="program-item">
+                            <h3>{{ program }}</h3>
+                            <p>Major initiative led by {{ ministry.name }}.</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <aside class="ministry-sidebar">
+                {% if leader %}
+                <div class="sidebar-section leadership-card">
+                    <h3>Leadership</h3>
+                    <div class="leader-box">
+                        <div class="leader-avatar">👤</div>
+                        <h4>{{ leader.name }}</h4>
+                        <p class="leader-title">{{ leader.title }}</p>
+                        <a href="{{ url_for('official_detail', slug=leader.name|slugify) }}" class="btn btn-sm btn-primary">View Profile</a>
+                        <a href="mailto:{{ leader.email }}" class="btn btn-sm btn-secondary">Contact</a>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="sidebar-section">
+                    <h3>Ministry Info</h3>
+                    <ul class="info-list">
+                        <li>
+                            <strong>Website:</strong><br>
+                            <a href="{{ ministry.website }}" target="_blank" rel="noopener noreferrer">{{ ministry.website }}</a>
+                        </li>
+                        <li>
+                            <strong>Type:</strong><br>
+                            Government Ministry
+                        </li>
+                        <li>
+                            <strong>Jurisdiction:</strong><br>
+                            National
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Related</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="{{ url_for('ministries') }}">← All Ministries</a></li>
+                        <li><a href="{{ url_for('officials') }}">Government Officials</a></li>
+                        <li><a href="{{ url_for('government') }}">Government Structure</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+{% endblock %}

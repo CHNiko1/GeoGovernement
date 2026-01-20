@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "New Digital Government Services Portal Launches",
+    "date": "2026-01-19",
+    "excerpt": "The government has launched a comprehensive digital portal to provide easier access to citizen services online.",
+    "content": "The Georgian Government announced today the launch of a modern, user-friendly digital services portal. This initiative represents a major step forward in making government services more accessible to citizens. The new platform integrates services from multiple agencies, reducing bureaucratic complexity and saving citizens time.\n\nKey features include:\n• One-stop shop for most government services\n• Secure digital ID verification\n• Real-time service status tracking\n• Multilingual support\n• Mobile-friendly design\n\nThe portal is expected to serve over 2 million Georgian citizens within the first year of operation.",
+    "categories": ["Technology", "Government", "Innovation"],
+    "image": "📰"
+  },
+  {
+    "id": 2,
+    "title": "Education Ministry Announces Teacher Salary Increases",
+    "date": "2026-01-18",
+    "excerpt": "The Ministry of Education has announced a significant increase in teacher compensation effective immediately.",
+    "content": "Minister of Education Sandro Lamparadze announced substantial salary increases for educators across Georgia, effective immediately. The initiative aims to attract and retain talented teachers and improve educational outcomes.\n\nHighlights of the initiative:\n• Average salary increase of 25% for primary teachers\n• Bonuses for teachers in rural areas\n• Performance incentive programs\n• Professional development funding\n\nThis investment in education is part of the government's broader commitment to educational excellence and recognizes the vital role teachers play in society.",
+    "categories": ["Education", "Government", "Social Policy"],
+    "image": "📰"
+  },
+  {
+    "id": 3,
+    "title": "Economic Growth Reaches 6.2% - Strongest in 5 Years",
+    "date": "2026-01-17",
+    "excerpt": "Georgia's economy grows at the fastest rate in five years, exceeding international forecasts.",
+    "content": "According to new economic data released by the Ministry of Economics, Georgia achieved 6.2% GDP growth in 2025, the strongest performance in five years. This growth exceeds international forecasts and demonstrates the success of government economic policies.\n\nKey growth drivers:\n• Tourism recovery (+34% year-over-year)\n• Manufacturing expansion in free trade zones\n• Agricultural productivity improvements\n• Technology sector growth (+18%)\n\nMinister Rezi Chichua attributed the success to continued investment attraction and business-friendly policies.",
+    "categories": ["Economics", "Business", "Government"],
+    "image": "📰"
+  },
+  {
+    "id": 4,
+    "title": "Green Georgia Initiative Plants 5 Million Trees",
+    "date": "2026-01-16",
+    "excerpt": "Landmark environmental project reaches major milestone in reforestation efforts.",
+    "content": "The Ministry of Environment announced that the Green Georgia Initiative has successfully planted 5 million trees across the country. This milestone represents significant progress in the government's commitment to environmental conservation and climate action.\n\nProject achievements:\n• 5 million trees planted nationwide\n• 15,000 hectares of forest restoration\n• Over 10,000 volunteers engaged\n• Expected CO2 sequestration: 250,000 tons annually\n\nMinister Giorgi Beridze stated: \"This achievement demonstrates Georgia's commitment to sustainable development and environmental protection for future generations.\"",
+    "categories": ["Environment", "Sustainability", "Government"],
+    "image": "📰"
+  },
+  {
+    "id": 5,
+    "title": "Healthcare System Reaches Universal Coverage Milestone",
+    "date": "2026-01-15",
+    "excerpt": "95% of Georgian population now covered by universal health insurance.",
+    "content": "The Ministry of Health reported that universal health coverage has reached 95% of Georgia's population, exceeding the government's targets. This achievement ensures that virtually all Georgian citizens have access to essential healthcare services.\n\nUniversal coverage includes:\n• Primary care services\n• Emergency medical services\n• Prescription medications (essential list)\n• Preventive health programs\n• Mental health services\n\nDr. Mariam Gvasalia emphasized the importance of this achievement: \"Universal healthcare is a fundamental right, and we are proud to have made it a reality for our citizens.\"",
+    "categories": ["Healthcare", "Social Policy", "Government"],
+    "image": "📰"
+  },
+  {
+    "id": 6,
+    "title": "Border Security Upgraded with Modern Technology",
+    "date": "2026-01-14",
+    "excerpt": "New surveillance and biometric systems enhance security at all border crossings.",
+    "content": "The Ministry of Internal Affairs completed the deployment of advanced surveillance and biometric identification systems at all major border crossings. These upgrades significantly enhance national security while improving the border crossing experience for travelers.\n\nTechnology upgrades include:\n• AI-powered surveillance systems\n• Advanced biometric scanning\n• Real-time threat detection\n• Integrated database systems\n• Mobile verification units\n\nMinister Niko Chitaishvili stated: \"These systems represent a major advancement in protecting our nation while maintaining smooth border operations.\"",
+    "categories": ["Security", "Technology", "Government"],
+    "image": "📰"
+  },
+  {
+    "id": 7,
+    "title": "International Summit on Regional Cooperation Held in Tbilisi",
+    "date": "2026-01-13",
+    "excerpt": "Regional leaders gather to discuss peace, trade, and development cooperation.",
+    "content": "Tbilisi hosted an international summit bringing together leaders from neighboring countries and international organizations to discuss regional cooperation, trade, and peace initiatives. The summit resulted in several bilateral and multilateral agreements.\n\nKey outcomes:\n• Regional trade pact signed by 5 nations\n• Joint environmental conservation agreement\n• Cultural exchange program expansion\n• Education partnership agreements\n\nMinister of Foreign Affairs Tamar Zedginidze noted: \"This summit strengthens Georgia's role as a regional leader and demonstrates our commitment to peace and cooperation.\"",
+    "categories": ["International Relations", "Diplomacy", "Government"],
+    "image": "📰"
+  },
+  {
+    "id": 8,
+    "title": "Small Business Support Program Reaches 10,000 Entrepreneurs",
+    "date": "2026-01-12",
+    "excerpt": "Start-up Georgia program celebrates major success in supporting entrepreneurship.",
+    "content": "The Start-up Georgia program has successfully provided support to over 10,000 entrepreneurs, including funding, mentorship, and resources. This milestone demonstrates the government's commitment to fostering economic growth through entrepreneurship.\n\nProgram support includes:\n• Seed funding and microloans\n• Business mentorship and training\n• Co-working space access\n• Market access assistance\n• Technology infrastructure support\n\nMinister of Economics Rezi Chichua stated: \"These 10,000 businesses represent innovation, growth, and economic opportunity for Georgia's future.\"",
+    "categories": ["Business", "Economics", "Innovation"],
+    "image": "📰"
+  }
+]

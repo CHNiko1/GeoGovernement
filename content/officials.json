@@ -1,0 +1,127 @@
+[
+  {
+    "id": "president",
+    "name": "Giorgi Katamadze",
+    "title": "President of Georgia",
+    "bio": "A seasoned statesman with over 25 years of experience in public service and governance. President Katamadze is committed to democratic values, economic development, and regional stability.",
+    "email": "president@government.ge",
+    "phone": "+995 32 2 999 999",
+    "priorities": [
+      "Strengthening democratic institutions",
+      "Economic growth and job creation",
+      "Regional cooperation and peace",
+      "Digital transformation"
+    ],
+    "photo": "img/president.jpg"
+  },
+  {
+    "id": "premier-minister",
+    "name": "Sandro Mikeladze",
+    "title": "Premier Minister",
+    "bio": "A dynamic political leader with a vision for economic modernization and social progress. Premier Minister Mikeladze is dedicated to implementing strategic reforms and strengthening Georgia's position on the international stage.",
+    "email": "sandro.mikeladze@government.ge",
+    "phone": "+995 32 2 999 888",
+    "priorities": [
+      "Economic modernization",
+      "Infrastructure development",
+      "International partnerships",
+      "Social welfare programs"
+    ],
+    "photo": "img/sandro_mikeladze.jpg"
+  },
+  {
+    "id": "minister-internal",
+    "name": "Niko Chitaishvili",
+    "title": "Minister of Internal Affairs",
+    "bio": "Former chief of police with a strong track record in law enforcement and public safety. Minister Chitaishvili focuses on modernizing security services and improving community relations.",
+    "email": "niko.chitaishvili@government.ge",
+    "phone": "+995 32 2 999 111",
+    "priorities": [
+      "Public safety modernization",
+      "Counter-terrorism initiatives",
+      "Emergency response systems",
+      "Community policing"
+    ],
+    "photo": "img/niko_chitaishvili.png"
+  },
+  {
+    "id": "minister-education",
+    "name": "Sandro Lamparadze",
+    "title": "Minister of Education",
+    "bio": "Renowned educator and reform advocate. Minister Lamparadze is driving educational innovation, curriculum modernization, and equal access to quality education across Georgia.",
+    "email": "sandro.lamparadze@government.ge",
+    "phone": "+995 32 2 999 222",
+    "priorities": [
+      "Curriculum innovation",
+      "Digital learning platforms",
+      "Teacher professional development",
+      "Educational equity"
+    ],
+    "photo": "img/education_minister.jpg"
+  },
+  {
+    "id": "minister-economics",
+    "name": "Rezi Chichua",
+    "title": "Minister of Economics",
+    "bio": "Economist and business strategist with extensive experience in market development. Minister Chichua leads initiatives to attract foreign investment and foster entrepreneurship.",
+    "email": "rezi.chichua@government.ge",
+    "phone": "+995 32 2 999 333",
+    "priorities": [
+      "Foreign direct investment",
+      "Start-up ecosystem development",
+      "Infrastructure investment",
+      "Trade policy reform"
+    ],
+    "photo": "https://scontent.ftbs4-2.fna.fbcdn.net/v/t1.15752-9/610143184_1300966445168635_5812037619971608501_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_ohc=yIsNZYQd8nEQ7kNvwEOoK2x&_nc_oc=AdnOkGifHHVoiZNLBvJXtGD76hse-70_cLCjwfIKkNOhw5V8NpivYsHxTja-cEUq1fw&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&oh=03_Q7cD4QFmyZqQVus0fimFrfej3IbnJzI-uY1OA-fanlbExl23Ww&oe=69974E6B"
+  },
+  {
+    "id": "minister-healthcare",
+    "name": "Davit Shishmanidze",
+    "title": "Building Minister",
+    "bio": "Infrastructure strategist leading national building standards, resilient construction, and safe urban development across Georgia.",
+    "email": "davit.shishmanidze@government.ge",
+    "phone": "+995 32 2 999 444",
+    "priorities": [
+      "Resilient public infrastructure",
+      "Modern building codes and safety",
+      "Affordable housing initiatives",
+      "Sustainable urban development"
+    ],
+    "photo": "https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.15752-9/619298331_734155792749880_4002792530007308207_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=SgEOqGkAweIQ7kNvwGl-b9i&_nc_oc=AdkW45l22mvZgulRMVwD4HjQS8XVhZZ42p4L9Z8Kz9OoNq7QUpKmAOhNq9EmyFehQB8&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&oh=03_Q7cD4QH7yrumoCrKUm-4XkEHZWiTpmLPmGeSgHYF8Gv8YWPvKA&oe=6997584C"
+  },
+  {
+    "id": "minister-agriculture",
+    "name": "Irakli Lomadze",
+    "title": "Minister of Agriculture",
+    "bio": "Agriculture modernizer focused on resilient food systems, irrigation upgrades, and rural economic growth across Georgia.",
+    "email": "irakli.lomadze@government.ge",
+    "phone": "+995 32 2 999 555",
+    "priorities": [
+      "Sustainable farming and food security",
+      "Irrigation and water management modernization",
+      "Rural development and market access",
+      "Agri-tech and innovation for farmers"
+    ],
+    "photo": "img/irakli_lomadze.jpg"
+  },
+  {
+    "id": "minister-foreign",
+    "name": "Vakansia",
+    "title": "Minister of Foreign Affairs",
+    "bio": "Position currently vacant.",
+    "email": "",
+    "phone": "",
+    "priorities": [],
+    "photo": "placeholder-official"
+  },
+  {
+    "id": "deputy-pm",
+    "name": "Vakansia",
+    "title": "Deputy Prime Minister",
+    "bio": "Position currently vacant.",
+    "email": "",
+    "phone": "",
+    "priorities": [],
+    "photo": "placeholder-official"
+  }
+]

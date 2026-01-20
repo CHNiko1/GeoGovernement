@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}{{ official.name }} - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li><a href="{{ url_for('officials') }}">Officials</a></li>
+<li>{{ official.name }}</li>
+{% endblock %}
+
+{% block content %}
+<section class="section official-detail-section">
+    <div class="container">
+        <div class="official-detail">
+            <div class="official-detail-header">
+                <div class="official-detail-image">
+                    {% set photo = official.photo %}
+                    {% if photo %}
+                        {% if photo.startswith('http') %}
+                            <img src="{{ photo }}" alt="{{ official.name }}" class="official-photo-large">
+                        {% else %}
+                            <img src="{{ url_for('static', filename=photo.lstrip('/')) }}" alt="{{ official.name }}" class="official-photo-large">
+                        {% endif %}
+                    {% else %}
+                        <div class="placeholder-avatar-large">{{ official.name[0] }}</div>
+                    {% endif %}
+                </div>
+                <div class="official-detail-info">
+                    <h1>{{ official.name }}</h1>
+                    <p class="official-title-large">{{ official.title }}</p>
+                    
+                    <div class="official-detail-contact">
+                        <p>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:{{ official.email }}">{{ official.email }}</a>
+                        </p>
+                        <p>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:{{ official.phone }}">{{ official.phone }}</a>
+                        </p>
+                    </div>
+
+                    <div class="official-detail-actions">
+                        <button class="btn btn-primary" onclick="sendMessage('{{ official.name }}')">Send Message</button>
+                        <a href="{{ url_for('contact') }}" class="btn btn-secondary">Contact Form</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="official-detail-body">
+                <div class="detail-section">
+                    <h2>Biography</h2>
+                    <p>{{ official.bio }}</p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Key Priorities</h2>
+                    <ul class="priorities-list">
+                        {% for priority in official.priorities %}
+                        <li class="priority-item">
+                            <span class="priority-icon">✓</span>
+                            <span>{{ priority }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Focus Areas</h2>
+                    <div class="focus-areas">
+                        {% if 'leadership' in official.title.lower() or 'president' in official.title.lower() %}
+                        <div class="focus-area-card">
+                            <h3>National Leadership</h3>
+                            <p>Provides overall direction and strategic vision for the nation.</p>
+                        </div>
+                        {% endif %}
+                        <div class="focus-area-card">
+                            <h3>Policy Development</h3>
+                            <p>Develops and implements effective policies in their area of responsibility.</p>
+                        </div>
+                        <div class="focus-area-card">
+                            <h3>Public Engagement</h3>
+                            <p>Maintains open communication with citizens and stakeholders.</p>
+                        </div>
+                        <div class="focus-area-card">
+                            <h3>International Relations</h3>
+                            <p>Represents Georgia in diplomatic and international affairs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-adjacent" role="navigation">
+            <h3>Other Officials</h3>
+            <div class="adjacent-nav">
+                <a href="{{ url_for('officials') }}" class="btn btn-secondary">← Back to Officials</a>
+                <a href="{{ url_for('government') }}" class="btn btn-secondary">Government Structure</a>
+            </div>
+        </nav>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+function sendMessage(officialName) {
+    const message = `I would like to send a message to ${officialName}. Please use the contact form below.`;
+    showToast(message);
+    document.getElementById('messageSubject').value = `Message for ${officialName}`;
+}
+</script>
+{% endblock %}

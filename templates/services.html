@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Services - Georgian Government{% endblock %}
+
+{% block breadcrumb %}
+<li>Services</li>
+{% endblock %}
+
+{% block content %}
+<section class="section services-listing">
+    <div class="container">
+        <h1>Citizen Services</h1>
+        <p class="lead">Browse and access government services available to Georgian citizens and residents.</p>
+
+        <!-- Category Filter -->
+        <div class="category-tabs">
+            <a href="{{ url_for('services') }}" class="category-tab">All Services</a>
+            {% for category in categories %}
+            <a href="{{ url_for('services') }}" class="category-tab" onclick="filterByCategory('{{ category }}'); return false;">{{ category }}</a>
+            {% endfor %}
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid-full" id="servicesGrid">
+            {% for service in services %}
+            <div class="service-card-full" data-category="{{ service.category }}">
+                <div class="service-card-header">
+                    <div class="service-card-icon">{{ service.icon }}</div>
+                    <h3>{{ service.name }}</h3>
+                </div>
+                <div class="service-card-body">
+                    <p>{{ service.description }}</p>
+                    <div class="service-category-label">{{ service.category }}</div>
+                </div>
+                <div class="service-card-footer">
+                    <p class="service-details">{{ service.description_full }}</p>
+                    <button class="btn btn-primary" onclick="openServiceModal('{{ service.name }}', '{{ service.description_full|replace('\"', '&quot;') }}')">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Service Modal -->
+<div class="modal" id="serviceModal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeServiceModal()">✕</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="modal-actions">
+            <button class="btn btn-primary" onclick="showToast('Taking you to service portal...')">Access Service</button>
+            <button class="btn btn-secondary" onclick="closeServiceModal()">Close</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+function filterByCategory(category) {
+    const cards = document.querySelectorAll('.service-card-full');
+    cards.forEach(card => {
+        if (card.dataset.category === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+function openServiceModal(title, description) {
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDescription').textContent = description;
+    document.getElementById('serviceModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeServiceModal() {
+    document.getElementById('serviceModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal on escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeServiceModal();
+});
+</script>
+{% endblock %}

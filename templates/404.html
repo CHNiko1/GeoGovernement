@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found - Georgian Government{% endblock %}
+
+{% block content %}
+<section class="section error-page">
+    <div class="container">
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            <h2>Page Not Found</h2>
+            <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
+            
+            <div class="error-actions">
+                <a href="{{ url_for('home') }}" class="btn btn-primary">← Back to Home</a>
+                <a href="{{ url_for('services') }}" class="btn btn-secondary">Browse Services</a>
+            </div>
+
+            <div class="helpful-links">
+                <h3>Here are some helpful links:</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('government') }}">Government Overview</a></li>
+                    <li><a href="{{ url_for('news') }}">News</a></li>
+                    <li><a href="{{ url_for('services') }}">Services</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

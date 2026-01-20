@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Georgian Government{% endblock %}
+
+{% block og_description %}Welcome to the official Georgian Government portal. Access government services, news, and information.{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Serving Georgia</h1>
+            <p class="hero-subtitle">Your trusted source for government information and services</p>
+            <div class="hero-actions">
+                <a href="{{ url_for('officials') }}" class="btn btn-primary">View Government Officials</a>
+                <a href="{{ url_for('services') }}" class="btn btn-secondary">Explore Services</a>
+                <a href="{{ url_for('news') }}" class="btn btn-secondary">Read News</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Government Priorities -->
+<section class="section priorities-section">
+    <div class="container">
+        <h2 class="section-title">Government Priorities 2026</h2>
+        <div class="priorities-grid">
+            <div class="priority-card">
+                <div class="priority-icon">📊</div>
+                <h3>Economic Growth</h3>
+                <p>Sustainable development and job creation through strategic investments and business-friendly policies.</p>
+            </div>
+            <div class="priority-card">
+                <div class="priority-icon">🎓</div>
+                <h3>Education Excellence</h3>
+                <p>Quality education for all citizens with modern curricula and digital learning platforms.</p>
+            </div>
+            <div class="priority-card">
+                <div class="priority-icon">🏥</div>
+                <h3>Healthcare Access</h3>
+                <p>Universal healthcare coverage ensuring all Georgians have access to quality medical services.</p>
+            </div>
+            <div class="priority-card">
+                <div class="priority-icon">🌱</div>
+                <h3>Environmental Protection</h3>
+                <p>Sustainable practices and conservation to protect Georgia's natural heritage for future generations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News -->
+<section class="section news-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Latest News</h2>
+            <a href="{{ url_for('news') }}" class="btn btn-link">View All News →</a>
+        </div>
+        <div class="news-grid">
+            {% for article in latest_news %}
+            <article class="news-card">
+                <div class="news-card-image">{{ article.image }}</div>
+                <div class="news-card-content">
+                    <div class="news-meta">
+                        <time datetime="{{ article.date }}">{{ article.date|date_format }}</time>
+                        <span class="news-category">{{ article.categories[0] }}</span>
+                    </div>
+                    <h3><a href="{{ url_for('news_detail', slug=article.title|slugify) }}">{{ article.title }}</a></h3>
+                    <p>{{ article.excerpt }}</p>
+                    <a href="{{ url_for('news_detail', slug=article.title|slugify) }}" class="read-more">Read Article →</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Popular Services -->
+<section class="section services-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Popular Services</h2>
+            <a href="{{ url_for('services') }}" class="btn btn-link">Explore All Services →</a>
+        </div>
+        <div class="services-grid">
+            {% for service in popular_services %}
+            <a href="{{ url_for('services') }}" class="service-card">
+                <div class="service-icon">{{ service.icon }}</div>
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+                <span class="service-category">{{ service.category }}</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links -->
+<section class="section quick-links-section">
+    <div class="container">
+        <h2 class="section-title">Quick Access</h2>
+        <div class="quick-links">
+            <a href="{{ url_for('government') }}" class="quick-link">
+                <span class="quick-link-icon">🏛️</span>
+                <span class="quick-link-text">Government Structure</span>
+            </a>
+            <a href="{{ url_for('officials') }}" class="quick-link">
+                <span class="quick-link-icon">👥</span>
+                <span class="quick-link-text">Meet Officials</span>
+            </a>
+            <a href="{{ url_for('ministries') }}" class="quick-link">
+                <span class="quick-link-icon">📋</span>
+                <span class="quick-link-text">Ministries</span>
+            </a>
+            <a href="{{ url_for('contact') }}" class="quick-link">
+                <span class="quick-link-icon">💬</span>
+                <span class="quick-link-text">Send Message</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Apply for Passport",
+    "category": "Civil Registry",
+    "description": "Apply for a new passport, renewal, or replacement.",
+    "description_full": "Apply for a new Georgian passport online or visit a local office. Process typically takes 5-10 business days. Required documents: valid ID, birth certificate, and application form.",
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Driver License Renewal",
+    "category": "Transportation",
+    "description": "Renew your driver license online or in person.",
+    "description_full": "Renew your driver license before expiration. Can be done online for most citizens. Visit your local office if you need a replacement due to loss or damage.",
+    "icon": "🚗"
+  },
+  {
+    "id": 3,
+    "name": "Pay Taxes Online",
+    "category": "Finance",
+    "description": "Pay income taxes, property taxes, and other government fees.",
+    "description_full": "Secure online portal for paying all government taxes and fees. View your tax records, get payment plans, and receive official receipts immediately.",
+    "icon": "💰"
+  },
+  {
+    "id": 4,
+    "name": "Register a Business",
+    "category": "Business",
+    "description": "Register a new business or sole proprietorship.",
+    "description_full": "Complete online business registration. Receive your business license within 24 hours. Support available for business planning and compliance requirements.",
+    "icon": "🏢"
+  },
+  {
+    "id": 5,
+    "name": "Apply for Social Benefits",
+    "category": "Social Services",
+    "description": "Apply for unemployment, disability, or other benefits.",
+    "description_full": "Apply for various social support programs. Check eligibility, view benefits calculator, track your application status, and receive direct support.",
+    "icon": "🤝"
+  },
+  {
+    "id": 6,
+    "name": "Register Birth Certificate",
+    "category": "Civil Registry",
+    "description": "Register a newborn and obtain a birth certificate.",
+    "description_full": "Register births within 30 days. Online application available with home delivery of certificate options. Free service for Georgian citizens.",
+    "icon": "👶"
+  },
+  {
+    "id": 7,
+    "name": "Property Registration",
+    "category": "Real Estate",
+    "description": "Register property ownership or transfer property deed.",
+    "description_full": "Register real estate property, update ownership records, or transfer property rights. Online submission with electronic notarization available.",
+    "icon": "🏠"
+  },
+  {
+    "id": 8,
+    "name": "Vehicle Registration",
+    "category": "Transportation",
+    "description": "Register a vehicle or renew vehicle registration.",
+    "description_full": "Register new vehicles, renew registration, or update vehicle information. Includes insurance verification and emission testing coordination.",
+    "icon": "🚙"
+  },
+  {
+    "id": 9,
+    "name": "School Enrollment",
+    "category": "Education",
+    "description": "Enroll children in public schools.",
+    "description_full": "Online enrollment for public schools. Find schools near you, check available programs, and complete registration. Multilingual support available.",
+    "icon": "🎓"
+  },
+  {
+    "id": 10,
+    "name": "University Admission",
+    "category": "Education",
+    "description": "Apply for admission to Georgian universities.",
+    "description_full": "Online application portal for higher education institutions. View program offerings, submit applications, and track admission status.",
+    "icon": "🎓"
+  }
+]
