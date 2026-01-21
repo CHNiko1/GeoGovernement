@@ -193,11 +193,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--font-size-4xl);
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
   font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-lg);
+  text-align: center;
 }
 
 h3 {
@@ -228,6 +230,10 @@ p.lead {
   color: var(--color-text-secondary);
   font-weight: 500;
   margin-bottom: var(--spacing-lg);
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {

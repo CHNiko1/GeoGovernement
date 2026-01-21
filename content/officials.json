@@ -5,7 +5,7 @@
     "title": "President of Georgia",
     "bio": "A seasoned statesman with over 25 years of experience in public service and governance. President Katamadze is committed to democratic values, economic development, and regional stability.",
     "email": "president@government.ge",
-    "phone": "+995 32 2 999 999",
+    "phone": "+995 514 822 929",
     "priorities": [
       "Strengthening democratic institutions",
       "Economic growth and job creation",
@@ -16,18 +16,18 @@
   },
   {
     "id": "premier-minister",
-    "name": "Sandro Mikeladze",
+    "name": "Sandro Abashidze",
     "title": "Premier Minister",
-    "bio": "A dynamic political leader with a vision for economic modernization and social progress. Premier Minister Mikeladze is dedicated to implementing strategic reforms and strengthening Georgia's position on the international stage.",
-    "email": "sandro.mikeladze@government.ge",
-    "phone": "+995 32 2 999 888",
+    "bio": "A dynamic political leader with a vision for economic modernization and social progress. Premier Minister Abashidze is dedicated to implementing strategic reforms and strengthening Georgia's position on the international stage.",
+    "email": "sandro.abashidze@government.ge",
+    "phone": "+995 592 000 017",
     "priorities": [
       "Economic modernization",
       "Infrastructure development",
       "International partnerships",
       "Social welfare programs"
     ],
-    "photo": "img/sandro_mikeladze.jpg"
+    "photo": "img/sandro_abashidze.jpg"
   },
   {
     "id": "minister-internal",
@@ -35,7 +35,7 @@
     "title": "Minister of Internal Affairs",
     "bio": "Former chief of police with a strong track record in law enforcement and public safety. Minister Chitaishvili focuses on modernizing security services and improving community relations.",
     "email": "niko.chitaishvili@government.ge",
-    "phone": "+995 32 2 999 111",
+    "phone": "+995 32 2 41 91 91",
     "priorities": [
       "Public safety modernization",
       "Counter-terrorism initiatives",
@@ -50,7 +50,7 @@
     "title": "Minister of Education",
     "bio": "Renowned educator and reform advocate. Minister Lamparadze is driving educational innovation, curriculum modernization, and equal access to quality education across Georgia.",
     "email": "sandro.lamparadze@government.ge",
-    "phone": "+995 32 2 999 222",
+    "phone": "+995 514 060 655",
     "priorities": [
       "Curriculum innovation",
       "Digital learning platforms",
@@ -65,7 +65,7 @@
     "title": "Minister of Economics",
     "bio": "Economist and business strategist with extensive experience in market development. Minister Chichua leads initiatives to attract foreign investment and foster entrepreneurship.",
     "email": "rezi.chichua@government.ge",
-    "phone": "+995 32 2 999 333",
+    "phone": "+995 555 200 129",
     "priorities": [
       "Foreign direct investment",
       "Start-up ecosystem development",
@@ -80,7 +80,7 @@
     "title": "Building Minister",
     "bio": "Infrastructure strategist leading national building standards, resilient construction, and safe urban development across Georgia.",
     "email": "davit.shishmanidze@government.ge",
-    "phone": "+995 32 2 999 444",
+    "phone": "+995 568 804 369",
     "priorities": [
       "Resilient public infrastructure",
       "Modern building codes and safety",
@@ -95,7 +95,7 @@
     "title": "Minister of Agriculture",
     "bio": "Agriculture modernizer focused on resilient food systems, irrigation upgrades, and rural economic growth across Georgia.",
     "email": "irakli.lomadze@government.ge",
-    "phone": "+995 32 2 999 555",
+    "phone": "+995 555 737 314",
     "priorities": [
       "Sustainable farming and food security",
       "Irrigation and water management modernization",
@@ -105,19 +105,54 @@
     "photo": "img/irakli_lomadze.jpg"
   },
   {
+    "id": "minister-animal-protection",
+    "name": "Sandro Mikeladze",
+    "title": "Minister of Animal Protection",
+    "bio": "Former Premier Minister with extensive experience in governance and policy-making. Minister Mikeladze now leads initiatives to protect animal welfare, promote responsible pet ownership, and strengthen environmental conservation efforts.",
+    "email": "sandro.mikeladze@government.ge",
+    "phone": "+995 555 27 25 25",
+    "priorities": [
+      "Animal welfare legislation",
+      "Wildlife conservation programs",
+      "Stray animal management",
+      "Veterinary services expansion"
+    ],
+    "photo": "img/sandro_mikeladze.jpg"
+  },
+  {
     "id": "minister-foreign",
-    "name": "Vakansia",
+    "name": "Nikoloz Nizharadze",
     "title": "Minister of Foreign Affairs",
-    "bio": "Position currently vacant.",
-    "email": "",
-    "phone": "",
-    "priorities": [],
-    "photo": "placeholder-official"
+    "bio": "Experienced diplomat and international relations expert. Minister Nizharadze is dedicated to strengthening Georgia's diplomatic ties, promoting regional cooperation, and advancing the country's integration into Euro-Atlantic structures.",
+    "email": "nikoloz.nizharadze@government.ge",
+    "phone": "+995 557 227 005",
+    "priorities": [
+      "Euro-Atlantic integration",
+      "Regional diplomacy and cooperation",
+      "International trade partnerships",
+      "Consular services modernization"
+    ],
+    "photo": "img/nikoloz_nizharadze.jpg"
+  },
+  {
+    "id": "minister-sports",
+    "name": "Sergi Manvelidze",
+    "title": "Minister of Sports",
+    "bio": "Former athlete and sports administrator with a passion for promoting physical education and competitive sports. Minister Manvelidze is committed to developing world-class sporting infrastructure and supporting Georgian athletes on the international stage.",
+    "email": "sergi.manvelidze@government.ge",
+    "phone": "+995 558 201 890",
+    "priorities": [
+      "Youth sports development",
+      "Olympic and Paralympic programs",
+      "Sports infrastructure modernization",
+      "Health and fitness initiatives"
+    ],
+    "photo": "img/sergi_manvelidze.jpg"
   },
   {
     "id": "deputy-pm",
     "name": "Vakansia",
-    "title": "Deputy Prime Minister",
+    "title": "Mdzevali",
     "bio": "Position currently vacant.",
     "email": "",
     "phone": "",
