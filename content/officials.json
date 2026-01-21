@@ -57,7 +57,7 @@
       "Teacher professional development",
       "Educational equity"
     ],
-    "photo": "img/education_minister.jpg"
+    "photo": "img/sandro_lamparadze.jpg"
   },
   {
     "id": "minister-economics",
@@ -77,7 +77,7 @@
   {
     "id": "minister-healthcare",
     "name": "Davit Shishmanidze",
-    "title": "Building Minister",
+    "title": "Minister of Infrastructure",
     "bio": "Infrastructure strategist leading national building standards, resilient construction, and safe urban development across Georgia.",
     "email": "davit.shishmanidze@government.ge",
     "phone": "+995 568 804 369",
@@ -87,7 +87,7 @@
       "Affordable housing initiatives",
       "Sustainable urban development"
     ],
-    "photo": "https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.15752-9/619298331_734155792749880_4002792530007308207_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=SgEOqGkAweIQ7kNvwGl-b9i&_nc_oc=AdkW45l22mvZgulRMVwD4HjQS8XVhZZ42p4L9Z8Kz9OoNq7QUpKmAOhNq9EmyFehQB8&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&oh=03_Q7cD4QH7yrumoCrKUm-4XkEHZWiTpmLPmGeSgHYF8Gv8YWPvKA&oe=6997584C"
+    "photo": "img/davit_shishmanidze.jpg"
   },
   {
     "id": "minister-agriculture",
